@@ -1,0 +1,22 @@
+.page-nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 13px;
+    padding: 15px 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    text-decoration: none;
+    padding: 10px;
+
+    &:hover {
+      color: #ffcc00;
+      padding: 10px;
+      text-decoration: underline;
+    }
+  }
+}
