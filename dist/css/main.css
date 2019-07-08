@@ -408,6 +408,9 @@ template {
 html {
   box-sizing: border-box; }
 
+body {
+  font-size: 16px; }
+
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
@@ -510,3 +513,43 @@ body {
     color: #ffcc00;
     padding: 10px;
     text-decoration: underline; }
+
+.projects {
+  background-color: #000000;
+  text-align: center; }
+
+.projects-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 4px; }
+
+.primary-btn {
+  background-color: #ffcc00;
+  color: #000000;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.section-header {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: 6px;
+  padding: 0 30px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative; }
+  .section-header::after, .section-header::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    top: 5px;
+    bottom: 5px;
+    background-color: #ffcc00; }
+  .section-header::after {
+    right: 0; }
+  .section-header::before {
+    left: 0; }
+
+.project {
+  max-width: 100%; }

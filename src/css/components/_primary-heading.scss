@@ -1,0 +1,28 @@
+.section-header {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: 6px;
+  padding: 0 30px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    top: 5px;
+    bottom: 5px;
+    background-color: $secondary-brand-color;
+  }
+
+  &::after {
+    right: 0;
+  }
+
+  &::before {
+    left: 0;
+  }
+}

@@ -1,3 +1,11 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.primary-btn {
+  background-color: $secondary-brand-color;
+  color: #000000;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

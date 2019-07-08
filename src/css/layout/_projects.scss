@@ -1,0 +1,10 @@
+.projects {
+  background-color: #000000;
+  text-align: center;
+}
+
+.projects-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 4px;
+}
