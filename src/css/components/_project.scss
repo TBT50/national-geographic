@@ -1,3 +1,11 @@
 .project {
+  text-align: left;
   max-width: 100%;
+
+  &__header {
+    color: #ffffff;
+    font-size: 17px;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+  }
 }

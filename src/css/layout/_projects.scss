@@ -1,5 +1,7 @@
 .projects {
   background-color: #000000;
+  padding-top: 60px;
+  padding-bottom: 140px;
   text-align: center;
 }
 
@@ -7,4 +9,5 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 4px;
+  padding-top: 45px;
 }

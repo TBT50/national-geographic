@@ -1,5 +1,7 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass");
+const imagemin = require("gulp-imagemin");
+const mozjpeg = require("imagemin-mozjpeg");
 
 gulp.task("sass", function() {
   return gulp
@@ -11,6 +13,13 @@ gulp.task("sass", function() {
 gulp.task("watch", function() {
   gulp.watch("src/css/**/*.scss", ["sass"]);
   gulp.watch("src/*.html", ["html"]);
+});
+
+gulp.task("default", () => {
+  gulp
+    .src("src/img/*")
+    .pipe(imagemin([mozjpeg({ quality: 70 })]))
+    .pipe(gulp.dest("dist/img"));
 });
 
 gulp.task("html", function() {
