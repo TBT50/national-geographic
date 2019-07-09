@@ -4,3 +4,22 @@
 .page-header {
   background-color: #231f20;
 }
+
+.page-title {
+  background-color: #000000;
+}
+
+.page-title__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.page-title__header {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

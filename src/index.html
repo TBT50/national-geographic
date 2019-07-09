@@ -10,7 +10,7 @@
   <body>
     <header class="page-header">
       <nav class="page-nav container">
-        <ul class="page-nav__list container">
+        <ul class="page-nav__list">
           <li><a href="#" class="page-nav__link">Start</a></li>
           <li><a href="#" class="page-nav__link">Zasady</a></li>
           <li><a href="#" class="page-nav__link">Dodaj zdjęcie</a></li>
@@ -21,16 +21,45 @@
           <li><a href="#" class="page-nav__link">National Geographic</a></li>
         </ul>
       </nav>
-      <section>
-        <h1>WYJĄTKOWY KONKURS FOTOGRAFICZNY ​​​​dziewiąta EDYCJA</h1>
+      <section class="page-title">
+        <div class="container">
+          <div class="page-title__container">
+            <a href="#">
+              <img src="img/NG-logo.png" alt="" />
+            </a>
+            <h1 class="page-title__header">
+              WYJĄTKOWY KONKURS FOTOGRAFICZNY ​​​​dziewiąta EDYCJA
+            </h1>
+            <a href="">
+              <img src="img/polsat-logo.png" alt="" />
+            </a>
+          </div>
+        </div>
       </section>
     </header>
     <main>
-      <section>
-        <h2 class="section-header">
+      <section class="hero">
+        <h2 class="section-header hero__header">
           JEŚLI FOTOGRAFIA JEST TWOJĄ PASJą PODZIEL SIĘ SWOIMI ZDJĘCIAMI
         </h2>
+        <div class="hero__btn">
+          <label for="addFile" class="hero__btn-label">
+            <span><img src="img/add-photo-icon.png" alt=""/></span>
+            <span>Dodaj zdjęcie</span>
+          </label>
+          <input
+            type="file"
+            name="addFile"
+            class="hero__btn-input"
+            id="addFile"
+          />
+        </div>
+        <div class="hero__more">
+          <a href="">Zasady udziału w konkursie</a>
+          <a href="">Czytaj więcej</a>
+        </div>
       </section>
+
       <section class="projects">
         <div class="container">
           <h2 class="section-header">NAJNOWSZE PRACE</h2>
@@ -45,18 +74,72 @@
 
             <article class="project">
               <div>
-                <img src="img/project-item-1.jpg" alt="" />
+                <img src="img/project-item-2.jpg" alt="" />
               </div>
-              <h3 class="project__header">Koci taniec</h3>
+              <h3 class="project__header">Hiszpańska siesta</h3>
+              <a href="">Podoba mi się</a>
+            </article>
+
+            <article class="project">
+              <div>
+                <img src="img/project-item-3.jpg" alt="" />
+              </div>
+              <h3 class="project__header">Leśne ostępy</h3>
+              <a href="">Podoba mi się</a>
+            </article>
+
+            <article class="project">
+              <div>
+                <img src="img/project-item-4.jpg" alt="" />
+              </div>
+              <h3 class="project__header">Starożytna wioska</h3>
+              <a href="">Podoba mi się</a>
+            </article>
+
+            <article class="project">
+              <div>
+                <img src="img/project-item-5.jpg" alt="" />
+              </div>
+              <h3 class="project__header">Niebo o poranku</h3>
+              <a href="">Podoba mi się</a>
+            </article>
+
+            <article class="project">
+              <div>
+                <img src="img/project-item-6.jpg" alt="" />
+              </div>
+              <h3 class="project__header">Wyprawa</h3>
+              <a href="">Podoba mi się</a>
+            </article>
+
+            <article class="project">
+              <div>
+                <img src="img/project-item-7.jpg" alt="" />
+              </div>
+              <h3 class="project__header">Nowe życie</h3>
+              <a href="">Podoba mi się</a>
+            </article>
+
+            <article class="project">
+              <div>
+                <img src="img/project-item-8.jpg" alt="" />
+              </div>
+              <h3 class="project__header">Zima</h3>
               <a href="">Podoba mi się</a>
             </article>
           </div>
           <a href="#" class="primary-btn">Zobacz Wszystkie zdjęcia</a>
         </div>
       </section>
+
       <section class="awards">
         <h2 class="section-header">Nagrody główne</h2>
+        <div class="awards__places">
+          <div class="award-item"></div>
+        </div>
+        <a href="#" class="primary-btn">Zobacz Wszystkie zdjęcia</a>
       </section>
+
       <section>
         <h2 class="section-header">Oglądaj national geographic hd</h2>
       </section>

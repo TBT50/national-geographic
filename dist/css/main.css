@@ -409,7 +409,8 @@ html {
   box-sizing: border-box; }
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: VerlagBook, sans-serif; }
 
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
@@ -432,12 +433,22 @@ a {
 ul {
   list-style-type: none; }
 
+img {
+  max-width: 100%; }
+
+@font-face {
+  font-family: VerlagBook;
+  src: url("../fonts/Verlag-Book.otf"); }
+
+@font-face {
+  font-family: VerlagLight;
+  src: url("../fonts/Verlag-Light.otf"); }
+
 /**
  * Basic typography style for copy text
  */
 body {
-  color: #222222;
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  color: #222222; }
 
 /**
  * Clear inner floats
@@ -454,7 +465,7 @@ body {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 1180px;
+  max-width: 1200px;
   /* 1 */
   margin-left: auto;
   /* 2 */
@@ -494,38 +505,6 @@ body {
   position: absolute;
   width: 1px; }
 
-.page-header {
-  background-color: #231f20; }
-
-.page-nav__list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  font-size: 13px;
-  padding: 15px 0;
-  margin: 0;
-  text-transform: uppercase; }
-
-.page-nav__link {
-  text-decoration: none;
-  padding: 10px; }
-  .page-nav__link:hover {
-    color: #ffcc00;
-    padding: 10px;
-    text-decoration: underline; }
-
-.projects {
-  background-color: #000000;
-  padding-top: 60px;
-  padding-bottom: 140px;
-  text-align: center; }
-
-.projects-group {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 4px;
-  padding-top: 45px; }
-
 .primary-btn {
   background-color: #ffcc00;
   color: #000000;
@@ -563,3 +542,86 @@ body {
     font-size: 17px;
     letter-spacing: 3.5px;
     text-transform: uppercase; }
+
+.page-header {
+  background-color: #231f20; }
+
+.page-title {
+  background-color: #000000; }
+
+.page-title__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.page-title__header {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.hero {
+  background-image: url("../img/bg-main-page.jpg");
+  background-size: cover;
+  padding: 92px 0 30px; }
+
+.hero__header {
+  max-width: 700px;
+  margin: 0 auto;
+  display: block;
+  font-size: 23px;
+  font-weight: 400; }
+
+.hero__btn-label {
+  width: 229px;
+  background-color: #ffcc00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  padding: 15px 0; }
+
+.hero__btn-input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+
+.page-nav__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px 0;
+  margin: 0; }
+
+.page-nav__link {
+  text-decoration: none;
+  padding: 10px;
+  font-family: VerlagBook;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase; }
+  .page-nav__link:hover {
+    color: #ffcc00;
+    padding: 10px;
+    text-decoration: underline; }
+
+.projects {
+  background-color: #000000;
+  padding-top: 60px;
+  padding-bottom: 140px;
+  text-align: center; }
+
+.projects-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-column-gap: 4px;
+  padding-top: 45px; }
+
+.awards {
+  background-image: url("../img/awards-bg.jpg");
+  text-align: center; }
